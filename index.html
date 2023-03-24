@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="js/script.js" defer></script>
+
+    <title>Intro Section with Dropdown Navigation</title>
+  </head>
+  <body class="text-[18px] h-full min-h-screen overflow-hidden">
+    <nav
+      id="navigation"
+      class="flex relative justify-between r p-7 md:px-16 md:mx-0"
+    >
+      <!-- Logo & Menu Container -->
+      <div
+        class="mobile-menu-container flex justify-between items-center space-x-20"
+      >
+        <div class="flex items-center justify-center">
+          <img src="images/logo.svg" alt="" />
+        </div>
+
+        <!-- Desktop Menu Only (DIV INSIDE DIV) -->
+        <div class="hidden space-x-12 lg:flex">
+          <!--  Accordion Desktop -->
+          <h3
+            class="text-sm group text-mediumGray capitalize hover:text-almostBlack"
+          >
+            <div class="group transition duration-500 ease" tabindex="2">
+              <div
+                class="inline-block group transition duration-500 ease group-focus:text-almostBlack"
+              >
+                <span class="cursor-pointer">Features</span>
+
+                <!-- Arrow -->
+                <div
+                  class="inline-block ml-3 pb-[1px] cursor-pointer transition duration-500 ease group-focus:rotate-180"
+                >
+                  <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      fill="none"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </div>
+                <!-- ArrowEnd -->
+              </div>
+              <!-- Inner CONTENT -->
+              <div
+                class="inner-accordion overflow-hidden text-mediumGray z-20 absolute rounded-xl top-[4.2rem] left-44 transition duration-500 group-focus:max-h-screen max-h-0 ease actual-dropdown"
+                id="accordionOne"
+              >
+                <div class="p-5 px-6">
+                  <ul class="flex flex-col max-w-full space-y-4">
+                    <li class="flex items-center gap-5">
+                      <img src="images/icon-todo.svg" alt="" / class="h-5 w-4">
+                      <a href="#" class="hover:text-red-400">Todo List</a>
+                    </li>
+                    <li class="flex items-center gap-5">
+                      <img src="images/icon-calendar.svg" alt="" / class="h-5
+                      w-4">
+                      <a href="#" class="hover:text-red-400">Calendar</a>
+                    </li>
+                    <li class="flex items-center gap-5">
+                      <img src="images/icon-reminders.svg" alt="" / class="h-5
+                      w-4">
+                      <a href="#" class="hover:text-red-400">Reminders</a>
+                    </li>
+                    <li class="flex items-center gap-5">
+                      <img src="images/icon-planning.svg" alt="" / class="h-5
+                      w-4">
+                      <a href="#" class="hover:text-red-400">Planning</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Inner content end -->
+            </div>
+          </h3>
+
+          <!-- Inner Content PT 2 -->
+          <h3
+            class="text-sm group text-mediumGray capitalize hover:text-almostBlack"
+          >
+            <div class="group" tabindex="2">
+              <div
+                class="inline-block group transition duration-500 ease group-focus:text-almostBlack"
+              >
+                <span class="cursor-pointer">Company</span>
+
+                <!-- Arrow -->
+                <div
+                  class="inline-block ml-3 pb-[1px] cursor-pointer transition duration-500 ease group-focus:rotate-180"
+                >
+                  <svg width="10" height="6" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      fill="none"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </div>
+                <!-- ArrowEnd -->
+              </div>
+              <!-- Inner CONTENT -->
+              <div
+                class="inner-accordion overflow-hidden z-20 absolute rounded-xl top-[4.2rem] left-[22.5rem] group-focus:max-h-screen max-h-0 actual-dropdown text-mediumGray"
+                id="accordionOne"
+              >
+                <div class="py-5 px-7">
+                  <ul class="flex flex-col max-w-full space-y-4">
+                    <li class="flex items-center gap-5">
+                      <a href="#" class="hover:text-red-400">History</a>
+                    </li>
+                    <li class="flex items-center gap-5">
+                      <a href="#" class="hover:text-red-400">Our Team</a>
+                    </li>
+                    <li class="flex items-center gap-5">
+                      <a href="#" class="hover:text-red-400">Blog</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Inner content end -->
+            </div>
+          </h3>
+          <!-- Inner Content PT 2 END-->
+
+          <h3 class="text-sm text-mediumGray capitalize hover:text-almostBlack">
+            <a href="#">Canvas</a>
+          </h3>
+          <h3 class="text-sm text-mediumGray capitalize hover:text-almostBlack">
+            <a href="#">Careers</a>
+          </h3>
+        </div>
+      </div>
+      <!-- Login & Register Div -->
+      <div class="hidden space-x-12 lg:flex">
+        <h3 class="text-sm text-mediumGray capitalize hover:text-almostBlack">
+          <a href="#">Login</a>
+        </h3>
+        <h3 class="text-sm text-mediumGray capitalize hover:text-almostBlack">
+          <a
+            href="#"
+            class="py-2 px-4 border rounded-xl border-mediumGray hover:border-almostBlack"
+            >Register</a
+          >
+        </h3>
+      </div>
+
+      <!-- Mobile Hamburger Menu  -->
+      <div id="menu-btn" class="lg:hidden hamburger-menu">
+        <button id=" hamburger">
+          <img src="images/icon-menu.svg" alt="" / class="open-menu">
+        </button>
+      </div>
+
+      <!--ACTIVE HAMBURGER MENU  -->
+      <div
+        id="menu"
+        class="hidden absolute z-20 h-full min-h-screen bg-almostWhite w-full max-w-[50%] top-3 right-0 lg:hidden"
+      >
+        <div id="close-btn" class="absolute right-7 top-4 md:right-16">
+          <button>
+            <img src="images/icon-close-menu.svg" alt="" />
+          </button>
+        </div>
+
+        <div class="text-base text-mediumGray mt-24 mx-auto">
+          <ul class="flex flex-col space-y-3 pl-8">
+            <!--  -->
+            <!-- 1st Accordion -->
+            <li class="">
+              <div
+                class="first-accordion group gap-3 items-center justify-center"
+                tabindex="1"
+              >
+                <div
+                  class="inline-block group group-hover:text-red-500 group-focus:text-red-500"
+                >
+                  <span class="cursor-pointer">Features</span>
+                </div>
+
+                <!-- Arrow -->
+                <div
+                  class="ml-2 inline-block mb-[1px] transition duration-500 ease group-focus:rotate-180 group-hover:cursor-pointer group-focus:text-red-500"
+                >
+                  <svg
+                    class=""
+                    width="10"
+                    height="6"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      fill="none"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </div>
+                <!-- Arrow End -->
+                <!-- Inner CONTENT -->
+                <div
+                  class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease actual-dropdown lg:hidden"
+                  id="accordionOne"
+                >
+                  <div class="p-3 pt-6">
+                    <ul class="flex flex-col max-w-full space-y-4">
+                      <li class="flex items-center gap-5">
+                        <img src="images/icon-todo.svg" alt="" / class="h-5
+                        w-4">
+                        <a href="#" class="hover:text-red-400">Todo List</a>
+                      </li>
+                      <li class="flex items-center gap-5">
+                        <img src="images/icon-calendar.svg" alt="" / class="h-5
+                        w-4">
+                        <a href="#" class="hover:text-red-400">Calendar</a>
+                      </li>
+                      <li class="flex items-center gap-5">
+                        <img src="images/icon-reminders.svg" alt="" / class="h-5
+                        w-4">
+                        <a href="#" class="hover:text-red-400">Reminders</a>
+                      </li>
+                      <li class="flex items-center gap-5">
+                        <img src="images/icon-planning.svg" alt="" / class="h-5
+                        w-4">
+                        <a href="#" class="hover:text-red-400">Planning</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Inner content end -->
+              </div>
+            </li>
+            <!-- 2nd Accordion -->
+            <li class="">
+              <div
+                class="second-accordion group gap-3 items-center justify-center"
+                tabindex="2"
+              >
+                <div
+                  class="inline-block group group-hover:text-red-500 group-focus:text-red-500"
+                >
+                  <p class="cursor-pointer">Company</p>
+                </div>
+
+                <!-- Arrow -->
+                <div
+                  class="ml-2 inline-block mb-[1px] transition duration-500 ease group-focus:rotate-180 group-hover:cursor-pointer group-focus:text-red-500"
+                >
+                  <svg
+                    class=""
+                    width="10"
+                    height="6"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      stroke="currentColor"
+                      stroke-width="1.5"
+                      fill="none"
+                      d="m1 1 4 4 4-4"
+                    />
+                  </svg>
+                </div>
+                <!-- Arrow End -->
+                <!-- Inner CONTENT -->
+                <div
+                  class="overflow-hidden transition duration-500 group-focus:max-h-screen max-h-0 ease actual-dropdown lg:hidden"
+                  id="accordionOne"
+                >
+                  <div class="p-3 pt-6">
+                    <ul class="flex flex-col max-w-full space-y-4">
+                      <li class="flex items-center gap-5">
+                        <a href="#" class="hover:text-red-400">History</a>
+                      </li>
+                      <li class="flex items-center gap-5">
+                        <a href="#" class="hover:text-red-400">Our Team</a>
+                      </li>
+                      <li class="flex items-center gap-5">
+                        <a href="#" class="hover:text-red-400">Blog</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <!-- Inner content end -->
+              </div>
+            </li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">About</a></li>
+          </ul>
+
+          <!-- Login & Register Div -->
+          <div
+            class="mt-14 flex flex-col space-y-6 justify-center items-center lg:hidden"
+          >
+            <h3
+              class="text-sm text-mediumGray capitalize hover:text-almostBlack"
+            >
+              <a href="#">Login</a>
+            </h3>
+            <h3
+              class="text-sm text-mediumGray capitalize hover:text-almostBlack"
+            >
+              <a
+                href="#"
+                class="py-3 px-16 border rounded-xl border-mediumGray hover:border-almostBlack"
+                >Register</a
+              >
+            </h3>
+          </div>
+        </div>
+      </div>
+      <!--ACTIVE HAMBURGER MENU END  -->
+    </nav>
+    <main>
+      <div class="">
+        <div
+          id="hero"
+          class="flex relative flex-col justify-between items-center space-y-10 mx-auto mt-5 md:mt-14 lg:flex-row-reverse lg:max-w-[1200px] lg:space-y-0 lg:justify-center lg:items-stretch lg:container lg:mx-auto xl:container lg:mt-8"
+        >
+          <!-- Images Images Images Images Images Images Images Images -->
+
+          <!-- Mobile Image -->
+
+          <div class="mobile-img div-img inline-flex lg:hidden">
+            <img src="images/image-hero-mobile.png" alt="" />
+          </div>
+
+          <!-- Desktop Image -->
+          <div class="desktop-img hidden div-img lg:flex">
+            <img src="images/image-hero-desktop.png" alt="" />
+          </div>
+
+          <!-- Header & Texts -->
+          <div
+            class="px-7 flex flex-col space-y-6 text-center items-center justify-center lg:space-y-0 lg:flex lg:justify-start lg:items-start"
+          >
+            <!-- TEXT & BUTTON DIV -->
+            <div
+              class="left-side space-y-5 lg:text-left lg:space-y-12 lg:mt-16"
+            >
+              <!-- MOBILE to MEDIUM SCREEN -->
+              <h1
+                class="text-[2.2rem] text-center font-bold text-almostBlack md:text-5xl lg:hidden"
+              >
+                Make remote work
+              </h1>
+              <!-- LARGE SCREEN -->
+              <h1
+                class="hidden text-center font-bold text-almostBlack lg:inline-block lg:text-[70px] lg:leading-[70px] lg:text-left xl:text-[85px]"
+              >
+                Make <br />
+                remote work
+              </h1>
+              <!-- MOBILE to large SCREEN -->
+              <p
+                class="text-base text-mediumGray text-center md:text-lg lg:text-xl lg:text-left xl:hidden"
+              >
+                Get your team in sync, no matter your location. Streamline
+                processes, create team rituals, and watch productivity soar
+              </p>
+
+              <!-- XL SCREEN ONLY -->
+              <p class="hidden text-mediumGray text-xl pr-52 text-left xl:flex">
+                Get your team in sync, no matter your location. Streamline
+                processes, create team rituals, and watch productivity soar
+              </p>
+
+              <div class="inline-block">
+                <button
+                  class="inline-block mt-2 mb-7 px-6 py-3 text-white text-center rounded-2xl outline-none font-bold border hover:border hover:border-almostBlack bg-almostBlack hover:bg-white hover:text-almostBlack focus:border-almostBlack focus-almostBlack focus:bg-white focus:text-almostBlack focus:border focus:border-x-almostBlack hover:duration-700"
+                >
+                  Learn more
+                </button>
+              </div>
+            </div>
+
+            <!-- logos div -->
+            <div
+              class="flex space-x-8 items-center justify-center pb-7 md:pb-0 md:gap-0 lg:inline-flex lg:absolute lg:bottom-0 lg:space-x-12 xl:space-x-16"
+            >
+              <div class="">
+                <img
+                  src="/images/client-databiz.svg"
+                  alt=""
+                  class="image-logo"
+                />
+              </div>
+
+              <div class="">
+                <img
+                  src="/images/client-audiophile.svg"
+                  alt=""
+                  class="image-logo logo2"
+                />
+              </div>
+
+              <div class="">
+                <img src="/images/client-meet.svg" alt="" class="image-logo" />
+              </div>
+
+              <div class="">
+                <img src="/images/client-maker.svg" alt="" class="image-logo" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

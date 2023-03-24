@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@media screen and (max-width: 430px) {
+  .image-logo {
+    height: 18px;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .mobile-img {
+    height: 100%;
+    width: 100%;
+    max-width: 550px;
+  }
+}
+
+@media screen and (min-width: 976px) {
+  #hero {
+    width: 100%;
+    max-width: 1300px;
+    padding-right: 20px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #hero {
+    width: 100%;
+    max-width: 1400px;
+    padding-right: 20px;
+
+    @apply mt-14;
+  }
+
+  h1 {
+    @apply text-8xl;
+  }
+}
+
+.inner-accordion {
+  box-shadow: 1px 9px 27px -1px rgba(189, 177, 177, 0.41);
+  -webkit-box-shadow: 1px 9px 27px -1px rgba(189, 177, 177, 0.41);
+  -moz-box-shadow: 1px 9px 27px -1px rgba(189, 177, 177, 0.41);
+}
